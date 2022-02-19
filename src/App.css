@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--clr-light);
+}
+
+:root {
+ 
+  /* Font */
+  --ff-primary:'Paytone One', sans-serif;
+  --ff-secondary:'Architects Daughter', monospace;
+ 
+  /* Font weigth */
+  --fw-reg: 300;
+  --fw-bold: 900;
+  
+  /* Colour */
+  --clr-light: rgb(182, 179, 179);
+  --clr-dark: rgb(139, 112, 112);
+  --clr-accent: rgb(179, 113, 129);
+  
+  /* Font size */
+  --fs-h1: 1rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-h4: 0.75rem;
+  --fs-body: 1rem;
+
+  /* Box shadow */
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 
+            0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+/* Navbar */
+.navbar--list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 20px;
+  background-color: var(--clr-accent);
+  margin: 15px, 0px, 15px, 0px;
+
+}
+
+.navbar--list--item { 
+  font-size: var(--fs-h2);
+}
