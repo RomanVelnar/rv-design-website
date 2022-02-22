@@ -1,6 +1,6 @@
 import { createTheme } from '@material-ui/core/styles';
 import { typography } from '@mui/system';
-import Image from '/image-bg.jpg'
+// import Image from '/image-bg.jpg'
 import CssBaseline from '@mui/material/CssBaseline';
 
 const theme = createTheme({
@@ -28,15 +28,16 @@ const theme = createTheme({
       }
     },
   },
-  overrides: {
-    MuiCssBaseline: {
-      '@global': {
-        body: {
-          backgroundImage: `url(${Image})`,
-        },
-      },
-    },
-  },
+  // overrides: {
+  //   MuiCssBaseline: {
+  //     '@global': {
+  //       body: {
+  //         color: "black",
+  //         // backgroundImage: `url(${Image})`,
+  //       },
+  //     },
+  //   },
+  // },
 });
 
 export default theme;
