@@ -1,7 +1,9 @@
-import { createMuiTheme } from '@material-ui/core';
+import { createTheme } from '@material-ui/core/styles';
 import { typography } from '@mui/system';
+import Image from '/image-bg.jpg'
+import CssBaseline from '@mui/material/CssBaseline';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: "#53ABAC"
@@ -15,7 +17,26 @@ const theme = createMuiTheme({
         'Poppins', 
         'sans-serif'
     ].join(',')
-    } 
+    },
+  components: {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          background: "none",
+          elevation: "0",
+        }
+      }
+    },
+  },
+  overrides: {
+    MuiCssBaseline: {
+      '@global': {
+        body: {
+          backgroundImage: `url(${Image})`,
+        },
+      },
+    },
+  },
 });
 
 export default theme;
