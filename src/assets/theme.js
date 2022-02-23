@@ -16,7 +16,7 @@ const theme = createTheme({
     fontFamily: [
         'Poppins', 
         'sans-serif'
-    ].join(',')
+    ].join(','), 
     },
   components: {
     MuiAppBar: {
@@ -24,6 +24,7 @@ const theme = createTheme({
         root: {
           background: "none",
           elevation: "0",
+          fontSize: 32,
         }
       }
     },

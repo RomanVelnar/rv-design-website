@@ -1,19 +1,21 @@
 import Navbar from './components/Navbar'
 import { ThemeProvider } from '@mui/material';
 import theme from './assets/theme'
-import Main from './components/Main'
-import Image from './images/image-bg.jpg'
+import Hero from './components/Hero'
+import Image from './images/bg-image1.jpg'
 import CssBaseline from '@mui/material/CssBaseline';
 import { styled } from '@mui/system';
 
 
 import './App.css';
+import { CenterFocusStrong } from '@material-ui/icons';
 
-const MyComponent = styled('div')({
-  height: 1100, 
-  padding: 8,
-  borderRadius: 4,
+const Background = styled('div')({
+  height: '100vh', 
   backgroundImage: `url(${Image})`,
+  backgroundPosition: 'center', 
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
 });
 
 
@@ -21,10 +23,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <MyComponent>
+      <Background>
           <Navbar />
-          <Main />
-      </MyComponent>
+          <Hero />
+      </Background>
     </ThemeProvider>
   );
 }

@@ -13,7 +13,7 @@ import MenuOutlinedIcon from '@material-ui/icons/MenuOutlined';
 import MenuItem from '@mui/material/MenuItem';
 
 
-const pages = ['Home', 'Services', 'Contact'];
+const pages = ['Home', 'About', 'Services', 'Contact'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -28,17 +28,17 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{color: "white", paddingLeft: 50}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-            flex="1500"
+            flex="7"
           >
-            RVdesign
+            RV<span className='logo--span'>design</span>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

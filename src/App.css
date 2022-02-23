@@ -19,9 +19,8 @@ body{
   --fw-bold: 900;
   
   /* Colour */
-  --clr-light: rgb(182, 179, 179);
-  --clr-dark: rgb(139, 112, 112);
-  --clr-accent: rgb(179, 113, 129);
+  --clr-primary: #53ABAC;
+  --clr-secondary: #D7BA72;
   
   /* Font size */
   --fs-h1: 1rem;
@@ -49,4 +48,14 @@ body{
 
 .navbar--list--item { 
   font-size: var(--fs-h2);
+}
+
+.logo--span {
+  color: var(--clr-secondary);
+}
+
+.mainheader--title {
+  height: auto;
+  width: auto;
+  border-radius: 2px solid;
 }
